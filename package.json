@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": 
-    "node-sass --include-path scss Proyecto_Final_CoderLPM/scss/style.scss Proyecto_Final_CoderLPM/css/style.css",
+    "node-sass --include-path scss Proyecto_Final_Coder/scss/style.scss Proyecto_Final_Coder/css/style.css",
 "watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
