@@ -1,0 +1,29 @@
+header{
+    background-color: $terciarycolor;
+    position: sticky;
+
+    .img_logo{
+        width: 120px;
+    }
+
+    .navbar-nav {
+        @extend .font_size;
+       
+
+                  
+           a{
+                background-color: $terciarycolor;
+                border: 5px solid $maincolor;
+                @include modelo_tipografia;
+                color: $maincolor;
+                   
+
+            &:hover {
+               @include subrayado;
+                color: $maincolor;
+              
+            }
+            }
+            
+            }
+        }

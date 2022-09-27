@@ -1,0 +1,73 @@
+
+
+.imagen_fondo {
+    background-image: url(../GaleriaVino/logo-vino1.jpg);
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center center;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+
+    .container1{
+        margin-top: 10px;
+        margin: 20px;
+    
+        
+    }
+    
+    .container_index{
+        margin-top: 90px;
+        align-items: center center;
+        margin-block:10px
+        
+    }
+    
+    .card-body{
+        text-align: center;
+        background-color: $secondarycolor;
+        padding-block: 20px;
+        color: $maincolor;
+    }
+    
+    .container-formulario{
+        margin-top: 20px 5px;
+        margin-inline: 500px;
+        @extend .font_size;
+    }
+    
+    .container-maps{
+        margin-inline: 100px;
+        @extend .font_size;
+        height: 400px;
+    }
+    
+    .altura{
+        width:300px;
+        height: 300px;
+        align-items: center;
+    
+       
+    }
+    
+    .container_menuvinos{
+        font-size: 20px;
+        display: flex;
+        margin-left: 30px;
+        background-color:$terciarycolor;
+        color: $maincolor;
+        position: fixed;
+        z-index: 1;
+        color: $maincolor;
+       
+       }
+       .wpp{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width:5%;
+        z-index: 1;
+    }
+    
+    }
+

@@ -1,0 +1,16 @@
+
+        
+.container_footer{ 
+    background-color: $secondarycolor;
+    width: 100%;
+    position:relative;
+    text-decoration: underline double;
+    @extend .font_size;
+    list-style-type: none;
+    color: $maincolor;
+    padding: 1em, 100%, 1em, 100%;
+    
+        a{
+            @include modelo_tipografia
+        }
+    }

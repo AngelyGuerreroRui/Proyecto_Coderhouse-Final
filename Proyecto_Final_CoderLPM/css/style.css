@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;700;800 & display=swap");
+.font_size, .container_footer, header .navbar-nav, .imagen_fondo .container-formulario, .imagen_fondo .container-maps {
+  font-size: 20px; }
+
+.container_footer {
+  background-color: #9e0c39;
+  width: 100%;
+  position: relative;
+  text-decoration: underline double;
+  list-style-type: none;
+  color: white;
+  padding: 1em, 100%, 1em, 100%; }
+  .container_footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white; }
+
+header {
+  background-color: black;
+  position: sticky; }
+  header .img_logo {
+    width: 120px; }
+  header .navbar-nav a {
+    background-color: black;
+    border: 5px solid white;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    color: white; }
+    header .navbar-nav a:hover {
+      background-color: #9e0c39;
+      color: black;
+      color: white; }
+
+.imagen_fondo {
+  background-image: url(../GaleriaVino/logo-vino1.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: auto;
+  text-align: center;
+  padding-top: 30px; }
+  .imagen_fondo .container1 {
+    margin-top: 10px;
+    margin: 20px; }
+  .imagen_fondo .container_index {
+    margin-top: 90px;
+    align-items: center center;
+    margin-block: 10px; }
+  .imagen_fondo .card-body {
+    text-align: center;
+    background-color: #9e0c39;
+    padding-block: 20px;
+    color: white; }
+  .imagen_fondo .container-formulario {
+    margin-top: 20px 5px;
+    margin-inline: 500px; }
+  .imagen_fondo .container-maps {
+    margin-inline: 100px;
+    height: 400px; }
+  .imagen_fondo .altura {
+    width: 300px;
+    height: 300px;
+    align-items: center; }
+  .imagen_fondo .container_menuvinos {
+    font-size: 20px;
+    display: flex;
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    color: white; }
+  .imagen_fondo .wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 5%;
+    z-index: 1; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+  *::selection {
+    background-color: #9e0c39;
+    color: black; }

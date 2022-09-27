@@ -1,0 +1,11 @@
+@mixin modelo_tipografia {
+  text-decoration: none;
+  font-size: 20px;
+  color: $maincolor;
+}
+
+
+@mixin subrayado {
+    background-color: $secondarycolor;
+    color:$terciarycolor;
+}
