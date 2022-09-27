@@ -1,29 +1,55 @@
-header{
-    background-color: $terciarycolor;
-    position: sticky;
+header {
+  background-color: $terciarycolor;
+  position: sticky;
 
-    .img_logo{
-        width: 120px;
+  .img_logo {
+    width: 120px;
+  }
+
+  .navbar-nav {
+    gap: 20px;
+
+    .nav-item {
+      -webkit-animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+      animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
 
-    .navbar-nav {
-        @extend .font_size;
-       
+    a {
+      background-color: $maincolor;
+      border: 5px solid $maincolor;
+      @include modelo_tipografia;
+      color: $terciarycolor;
 
-                  
-           a{
-                background-color: $terciarycolor;
-                border: 5px solid $maincolor;
-                @include modelo_tipografia;
-                color: $maincolor;
-                   
+      &:hover {
+        @include subrayado;
+        color: $terciarycolor;
+      }
+    }
+  }
+}
 
-            &:hover {
-               @include subrayado;
-                color: $maincolor;
-              
-            }
-            }
-            
-            }
-        }
+@-webkit-keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}

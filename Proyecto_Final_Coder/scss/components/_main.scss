@@ -25,7 +25,7 @@
     
     .card-body{
         text-align: center;
-        background-color: $secondarycolor;
+        background-color: $terciarycolor;
         padding-block: 20px;
         color: $maincolor;
     }
@@ -51,14 +51,14 @@
     }
     
     .container_menuvinos{
-        font-size: 20px;
+        @extend .font_size;
         display: flex;
         margin-left: 30px;
         background-color:$terciarycolor;
         color: $maincolor;
         position: fixed;
         z-index: 1;
-        color: $maincolor;
+
        
        }
        .wpp{
