@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;700;800 & display=swap");
-.font_size, .container_footer, .imagen_fondo .container-formulario, .imagen_fondo .container-maps, .imagen_fondo .container_menuvinos {
+.font_size, .container_footer, .imagen_fondo .card-body .container-formulario, .imagen_fondo .card-body .container-maps, .imagen_fondo .card-body .container_menuvinos {
   font-size: 20px; }
 
 .container_footer {
@@ -23,19 +23,21 @@ header {
   header .navbar-nav {
     gap: 20px; }
     header .navbar-nav .nav-item {
+      color: white;
       -webkit-animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-    header .navbar-nav a {
-      background-color: white;
-      border: 5px solid white;
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      color: black; }
-      header .navbar-nav a:hover {
-        background-color: white;
-        color: black;
-        color: black; }
+      header .navbar-nav .nav-item a {
+        background-color: #9f0942;
+        border: 5px solid #9f0942;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        color: white;
+        font-weight: bold; }
+        header .navbar-nav .nav-item a:hover {
+          background-color: white;
+          color: black;
+          color: black; }
 
 @-webkit-keyframes rotate-in-ver {
   0% {
@@ -64,7 +66,8 @@ header {
   background-position: center center;
   height: auto;
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 30px;
+  font-weight: bold; }
   .imagen_fondo .container1 {
     margin-top: 10px;
     margin: 20px; }
@@ -77,29 +80,29 @@ header {
     background-color: black;
     padding-block: 20px;
     color: white; }
-  .imagen_fondo .container-formulario {
-    margin-top: 20px 5px;
-    margin-inline: 500px; }
-  .imagen_fondo .container-maps {
-    margin-inline: 100px;
-    height: 400px; }
-  .imagen_fondo .altura {
-    width: 300px;
-    height: 300px;
-    align-items: center; }
-  .imagen_fondo .container_menuvinos {
-    display: flex;
-    margin-left: 30px;
-    background-color: black;
-    color: white;
-    position: fixed;
-    z-index: 1; }
-  .imagen_fondo .wpp {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 5%;
-    z-index: 1; }
+    .imagen_fondo .card-body .container-formulario {
+      margin-top: 20px 5px;
+      margin-inline: 500px; }
+    .imagen_fondo .card-body .container-maps {
+      margin-inline: 100px;
+      height: 400px; }
+    .imagen_fondo .card-body .altura {
+      width: 300px;
+      height: 300px;
+      align-items: center; }
+    .imagen_fondo .card-body .container_menuvinos {
+      display: flex;
+      margin-left: 30px;
+      background-color: black;
+      color: white;
+      position: fixed;
+      z-index: 1; }
+    .imagen_fondo .card-body .wpp {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 5%;
+      z-index: 1; }
 
 * {
   padding: 0;
@@ -107,5 +110,28 @@ header {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif; }
   *::selection {
-    background-color: #9e0c39;
+    background-color: white;
     color: black; }
+
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; }
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+  background-color: aqua;
+  gap: 20px;
+  border-radius: 5px; }
+
+.boton {
+  background-color: aqua;
+  border: 1px solid chartreuse;
+  padding: 10px;
+  cursor: pointer;
+  color: blueviolet; }

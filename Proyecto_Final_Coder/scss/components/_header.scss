@@ -7,24 +7,28 @@ header {
   }
 
   .navbar-nav {
+ 
     gap: 20px;
-
+    
     .nav-item {
+        color: $maincolor;
       -webkit-animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
       animation: rotate-in-ver 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    }
+    
 
     a {
-      background-color: $maincolor;
-      border: 5px solid $maincolor;
+      background-color: $secondarycolor;
+     border: 5px solid $secondarycolor;
       @include modelo_tipografia;
-      color: $terciarycolor;
+      color: $maincolor;
+      font-weight: bold;
 
       &:hover {
         @include subrayado;
         color: $terciarycolor;
       }
+    }
     }
   }
 }
@@ -53,3 +57,4 @@ header {
     opacity: 1;
   }
 }
+

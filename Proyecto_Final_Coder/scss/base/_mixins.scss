@@ -9,3 +9,8 @@
     background-color: $maincolor;
     color:$terciarycolor;
 }
+
+@mixin tamanos($ancho, $alto){
+  width: $ancho;
+  height: $alto;
+}

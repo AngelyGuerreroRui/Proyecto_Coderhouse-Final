@@ -8,7 +8,65 @@
     font-family: 'Montserrat', sans-serif;
 
     &::selection{
-        background-color: $secondarycolor;
+        background-color: $maincolor;
         color: $terciarycolor;
     }
 }
+
+// main class:"catalogo"
+//     div class:"tarjeta"
+//     button class:"boton"
+
+// Grilla Cards
+.catalogo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap:20px;
+}
+// //media query tablet 
+// @media screen (max-width: 760px);{
+
+// }
+    
+
+$breakpoints:(  
+    sm: 540px,
+    md:768px,
+    lg:1024px
+    );
+
+    @mixin media-up($breakpoint) {
+        @media screen and (win-width: map-get($breakpoints,$breakpoint)) {
+        @content;
+        }
+            
+        }
+    
+ 
+
+
+
+
+// Estilo Cards catalogo
+.tarjeta{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    background-color: aqua;
+    gap:20px;
+    border-radius: 5px;
+
+}
+
+.boton{
+    background-color: aqua;
+    border: 1px solid chartreuse;
+    padding: 10px;
+    cursor:pointer;
+    color: blueviolet;
+
+}
+
