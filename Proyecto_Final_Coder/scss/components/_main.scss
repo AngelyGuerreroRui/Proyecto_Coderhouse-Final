@@ -5,10 +5,11 @@
     background-size:cover;
     background-repeat: repeat;
     background-position: center center;
-    height: auto;
+    height: 100%;
     text-align: center;
     padding-top: 30px;
     font-weight: bold;
+
 
   
 
@@ -23,6 +24,11 @@
         align-items: center center;
         margin-block:10px;
     }
+
+    .container-promociones{
+        width: 60%;
+    }
+ 
 
     .titulo1 {
         @extend .titulo_1;
@@ -57,19 +63,37 @@
         
      
     .container-formulario{
-        margin-top: 20px 5px;
-        margin-inline: 500px;
+         margin-top: 100px;
+         margin-inline: 500px;
         @extend .font_size;
+
+        .boton{
+            background-color: $maincolor;
+            color:$terciarycolor;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            gap:10px;
+            &:hover {
+                @include subrayado;
+                background-color: $secondarycolor;
+               
+              }
+        }
     }
     
+
+
+
     .container-maps{
-        margin-inline: 100px;
-        @extend .font_size;
-        height: 400px;
+        @include tamanos(350px, 350px);
+        align-items: center;
+        margin-bottom: 5px;
+        padding-bottom: 40px;
+
     }
      
-    .altura {
-        @include tamanos(300px, 300px);
+    .container-video{
+        @include tamanos(350px, 350px);
         align-items: center;
 
     }

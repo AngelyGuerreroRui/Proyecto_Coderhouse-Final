@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;700;800 & display=swap");
-.font_size, .container_footer, .imagen_fondo .container-formulario, .imagen_fondo .container-maps, .imagen_fondo .container_menuvinos {
+.font_size, .container_footer, .imagen_fondo .container-formulario, .imagen_fondo .container_menuvinos {
   font-size: 20px; }
 
 .titulo_1, .imagen_fondo .titulo1 {
@@ -29,7 +29,10 @@
 
 header {
   background-color: black;
-  position: sticky; }
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  width: 100%; }
   header .img_logo {
     width: 120px; }
   header .navbar-nav {
@@ -76,7 +79,7 @@ header {
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
-  height: auto;
+  height: 100%;
   text-align: center;
   padding-top: 30px;
   font-weight: bold; }
@@ -87,6 +90,8 @@ header {
     margin-top: 90px;
     align-items: center center;
     margin-block: 10px; }
+  .imagen_fondo .container-promociones {
+    width: 60%; }
   .imagen_fondo .titulo2 {
     margin-top: 20px; }
   .imagen_fondo .card-body {
@@ -99,14 +104,27 @@ header {
       color: black;
       background-color: #9f0942; }
   .imagen_fondo .container-formulario {
-    margin-top: 20px 5px;
+    margin-top: 100px;
     margin-inline: 500px; }
+    .imagen_fondo .container-formulario .boton {
+      background-color: white;
+      color: black;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      gap: 10px; }
+      .imagen_fondo .container-formulario .boton:hover {
+        background-color: white;
+        color: black;
+        background-color: #9f0942; }
   .imagen_fondo .container-maps {
-    margin-inline: 100px;
-    height: 400px; }
-  .imagen_fondo .altura {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 40px; }
+  .imagen_fondo .container-video {
+    width: 350px;
+    height: 350px;
     align-items: center; }
   .imagen_fondo .container_menuvinos {
     display: flex;

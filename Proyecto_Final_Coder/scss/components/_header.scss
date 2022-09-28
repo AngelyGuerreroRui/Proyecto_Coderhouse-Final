@@ -1,13 +1,16 @@
 header {
   background-color: $terciarycolor;
-  position: sticky;
-
+  position:sticky;
+	z-index:2;
+	top:0;
+	width:100%;
+	
   .img_logo {
     width: 120px;
   }
 
   .navbar-nav {
- 
+   
     gap: 20px;
     
     .nav-item {
