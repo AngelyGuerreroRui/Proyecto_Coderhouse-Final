@@ -24,9 +24,22 @@
        
         
     }
-    .titulo-principal{
-        -webkit-animation:roll-in-right .6s ease-out both;
-        animation:roll-in-right .6s ease-out both}
+    .titulo1{
+        @include titulo1;
+    }
+    .titulo2{
+        @include titulo2;
+        margin-top: 20px;
+        
+    }
+    .titulo3{
+        @include titulo3;
+
+    }
+
+    .titulo4{
+        @include titulo4;
+
     }
     .card-body{
         text-align: center;
@@ -95,4 +108,4 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
- @-webkit-keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
+ @-webkit-keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}}

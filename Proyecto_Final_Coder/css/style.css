@@ -155,7 +155,7 @@ header {
     margin-top: 90px;
     align-items: center center;
     margin-block: 10px; }
-  .imagen_fondo .titulo-principal {
+  .imagen_fondo .titulo1 {
     -webkit-animation: roll-in-right .6s ease-out both;
     animation: roll-in-right .6s ease-out both; }
 
