@@ -15,24 +15,9 @@
   height: $alto;
 }
 
-// $grid-breakpoints: (
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
- 
-// );
 
-// // Small devices (landscape phones, 576px and up)
-// @media (max-width: 576px) {
-//   .card{
-//     @include media-breakpoint-down(sm) {
-//       background-color: red($color: red);
-//      }
-//   }
-//  }
+@media (min-width: 576px)
 
-// // Medium devices (tablets, less than 992px)
-// @media (max-width: 768px) { }
+@media (min-width: 768px)
 
-// // Large devices (desktops, less than 1200px)
-// @media (max-width: 768px){ }
+@media (min-width: 992px)
