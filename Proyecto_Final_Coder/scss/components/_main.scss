@@ -34,18 +34,21 @@
     }
     .titulo3{
         @include titulo3;
-
     }
 
     .titulo4{
         @include titulo4;
-
     }
+
+    .card-productos{
+    @include card-productos;
+}
     .card-body{
         text-align: center;
         background-color: $terciarycolor;
         padding-block: 20px;
         color: $maincolor;
+        
         &:hover {
             @include subrayado;
             background-color: $secondarycolor;
