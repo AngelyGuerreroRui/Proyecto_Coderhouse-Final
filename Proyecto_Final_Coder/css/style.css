@@ -79,7 +79,7 @@ header {
   background-size: cover;
   background-repeat: repeat;
   background-position: center center;
-  height: 100%;
+  height: auto;
   text-align: center;
   padding-top: 30px;
   font-weight: bold; }
@@ -104,8 +104,9 @@ header {
       color: black;
       background-color: #9f0942; }
   .imagen_fondo .container-formulario {
-    margin-top: 100px;
-    margin-inline: 500px; }
+    margin: 150px;
+    margin-inline: 500px;
+    padding-inline: 1%; }
     .imagen_fondo .container-formulario .boton {
       background-color: white;
       color: black;
@@ -117,15 +118,17 @@ header {
         color: black;
         background-color: #9f0942; }
   .imagen_fondo .container-maps {
-    width: 350px;
-    height: 350px;
+    width: 600px;
+    height: 40px;
     align-items: center;
-    margin-bottom: 5px;
+    margin: 5px;
     padding-bottom: 40px; }
   .imagen_fondo .container-video {
-    width: 350px;
-    height: 350px;
-    align-items: center; }
+    width: 900px;
+    height: 400px;
+    align-items: center;
+    margin: 60px;
+    padding: 50px; }
   .imagen_fondo .container_menuvinos {
     display: flex;
     margin-left: 30px;

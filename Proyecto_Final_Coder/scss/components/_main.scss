@@ -5,7 +5,7 @@
     background-size:cover;
     background-repeat: repeat;
     background-position: center center;
-    height: 100%;
+    height: auto;
     text-align: center;
     padding-top: 30px;
     font-weight: bold;
@@ -63,8 +63,9 @@
         
      
     .container-formulario{
-         margin-top: 100px;
+         margin: 150px;
          margin-inline: 500px;
+         padding-inline: 1%;
         @extend .font_size;
 
         .boton{
@@ -85,16 +86,18 @@
 
 
     .container-maps{
-        @include tamanos(350px, 350px);
+        @include tamanos(600px, 40px);
         align-items: center;
-        margin-bottom: 5px;
+        margin: 5px;
         padding-bottom: 40px;
 
     }
      
     .container-video{
-        @include tamanos(350px, 350px);
+        @include tamanos(900px, 400px);
         align-items: center;
+        margin: 60px;
+        padding: 50px;
 
     }
     
