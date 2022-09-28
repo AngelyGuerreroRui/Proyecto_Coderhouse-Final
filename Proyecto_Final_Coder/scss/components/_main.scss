@@ -20,12 +20,26 @@
     /* Media query tablet */
 @media screen and (max-width:992px) {
     .box {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         background-color:red;
     }
   
 }
+/* Media query desktop */
+@media screen and (max-width:1120px) {
+    .productos {
+        display: grid;
+        background-color:red;
+        grid-template-columns: repeat(4, 1fr);
 
+    }
+
+
+    .menu-footer {
+        display: flex;
+    }
+}
 
     .container-promociones{
         width: 60%;
