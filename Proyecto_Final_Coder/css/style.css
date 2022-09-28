@@ -1,6 +1,86 @@
 @import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;700;800 & display=swap");
-.font_size, .container_footer, .imagen_fondo .card-body .container-formulario, .imagen_fondo .card-body .container-maps, .imagen_fondo .card-body .container_menuvinos {
+.font_size, .container_footer, .container-formulario, .container-maps, .container_menuvinos {
   font-size: 20px; }
+
+.titulo1 {
+  -webkit-animation: roll-in-right .6s ease-out both;
+  animation: roll-in-right .6s ease-out both; }
+
+.titulo2 {
+  -webkit-animation: roll-in-left .6s ease-out both;
+  animation: roll-in-left .6s ease-out both; }
+
+.titulo3 {
+  -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
+
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
 
 .container_footer {
   background-color: black;
@@ -9,7 +89,7 @@
   text-decoration: underline double;
   list-style-type: none;
   color: white;
-  padding: 1em, 100%, 1em, 100%; }
+  padding: 1em,100%,1em,2em; }
   .container_footer a {
     text-decoration: none;
     font-size: 20px;
@@ -75,34 +155,79 @@ header {
     margin-top: 90px;
     align-items: center center;
     margin-block: 10px; }
-  .imagen_fondo .card-body {
-    text-align: center;
-    background-color: black;
-    padding-block: 20px;
-    color: white; }
-    .imagen_fondo .card-body .container-formulario {
-      margin-top: 20px 5px;
-      margin-inline: 500px; }
-    .imagen_fondo .card-body .container-maps {
-      margin-inline: 100px;
-      height: 400px; }
-    .imagen_fondo .card-body .altura {
-      width: 300px;
-      height: 300px;
-      align-items: center; }
-    .imagen_fondo .card-body .container_menuvinos {
-      display: flex;
-      margin-left: 30px;
-      background-color: black;
-      color: white;
-      position: fixed;
-      z-index: 1; }
-    .imagen_fondo .card-body .wpp {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      width: 5%;
-      z-index: 1; }
+  .imagen_fondo .titulo-principal {
+    -webkit-animation: roll-in-right .6s ease-out both;
+    animation: roll-in-right .6s ease-out both; }
+
+.card-body {
+  text-align: center;
+  background-color: black;
+  padding-block: 20px;
+  color: white; }
+  .card-body:hover {
+    background-color: white;
+    color: black;
+    background-color: #9f0942; }
+
+.container-formulario {
+  margin-top: 20px 5px;
+  margin-inline: 500px; }
+
+.container-maps {
+  margin-inline: 100px;
+  height: 400px; }
+
+.altura {
+  width: 300px;
+  height: 300px;
+  align-items: center; }
+
+.container_menuvinos {
+  display: flex;
+  margin-left: 30px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  z-index: 1; }
+
+.wpp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 5%;
+  z-index: 1; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-9-28 0:27:24
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/* ----------------------------------------------
+ * Generated by Animista on 2022-9-28 0:28:3
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
+
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1; } }
 
 * {
   padding: 0;

@@ -8,7 +8,7 @@
     @extend .font_size;
     list-style-type: none;
     color: $maincolor;
-    padding: 1em, 100%, 1em, 100%;
+    padding: 1em,100%,1em,2em;
     
         a{
             @include modelo_tipografia
