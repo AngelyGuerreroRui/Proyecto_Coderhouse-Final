@@ -1,154 +1,232 @@
-
 .imagen_fondo {
-    background-image: url(../GaleriaVino/logo-vino1.jpg);
-    background-size:cover;
-    background-repeat: repeat;
-    background-position: center center;
-    height: auto;
-    text-align: center;
-    padding-top: 30px;
-    font-weight: bold;
+  background-image: url(../GaleriaVino/logo-vino1.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  height: auto;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
 
-    /* Media query mobile */
-@media screen and (max-width:576px) {
+/* Media query mobile */
+@media screen and (min-width:0) and (max-width: 576px) {
     .box {
-        background-color:aquamarine;
-        grid-auto-columns: repeat(2, 1fr);
+        display: flex;
+        background-color: blueviolet;
+        grid-auto-columns: auto;
 
-    }
+      }
 }
 
-//     /* Media query tablet */
-// @media screen and (max-width:992px) {
-//     .box {
-//         display: grid;
-//         grid-template-columns: repeat(2, 1fr);
-//         background-color:red;
-//     }
-  
-// }
-// /* Media query desktop */
-// @media screen and (max-width:1120px) {
-//     .box {
-//         display: grid;
-//         background-color:greenyellow;
-//         grid-template-columns: repeat(4, 1fr);
-
-//     }
-
-
-    .menu-footer {
+/* Media query tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .box {
         display: flex;
-    }
+        background-color: red;
+        grid-auto-columns: auto;
+        
+      }
 }
 
-    .container-promociones{
-        width: 60%;
-    }
- 
-
-    .titulo1 {
-        @extend .titulo_1;
-    }
-    .titulo2 {
-        @extend .titulo_2;
-        margin-top: 20px;
-        
-    }
-    .titulo3 {
-        @extend .titulo_3;
-        
-    }
-
-
+/* Media query desktop */
+@media screen and (min-width: 992px) and (max-width: 1120px) {
+  .box {
+    display: flex;
+    background-color: greenyellow;
+    grid-auto-columns: auto;
     
-    .card-body{
-        text-align: center;
-        background-color: $terciarycolor;
-        padding-block: 20px;
-        color: $maincolor;
-        
-        &:hover {
-            @include subrayado;
-            background-color: $secondarycolor;
-           
-          }
-       
+  }
+
+  .container_footer {
+    display: flex;
+  }
+}
+
+.container-promociones {
+  width: 60%;
+}
+
+.titulo1 {
+  @extend .titulo_1;
+}
+.titulo2 {
+  @extend .titulo_2;
+  margin-top: 20px;
+}
+.titulo3 {
+  @extend .titulo_3;
+}
+
+.card-body {
+  text-align: center;
+  background-color: $terciarycolor;
+  padding-block: 20px;
+  color: $maincolor;
+
+  &:hover {
+    @include subrayado;
+    background-color: $secondarycolor;
+  }
+}
+
+.container-formulario {
+  margin: 150px;
+  margin-inline: 500px;
+  padding-inline: 1%;
+  @extend .font_size;
+
+  .boton {
+    background-color: $maincolor;
+    color: $terciarycolor;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
+    &:hover {
+      @include subrayado;
+      background-color: $secondarycolor;
     }
+  }
+}
 
-    
-        
-     
-    .container-formulario{
-         margin: 150px;
-         margin-inline: 500px;
-         padding-inline: 1%;
-        @extend .font_size;
+.container-maps {
+  @include tamanos(600px, 40px);
+  align-items: center;
+  margin: 5px;
+  padding-bottom: 40px;
+}
 
-        .boton{
-            background-color: $maincolor;
-            color:$terciarycolor;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            gap:10px;
-            &:hover {
-                @include subrayado;
-                background-color: $secondarycolor;
-               
-              }
-        }
-    }
-    
+.container-video {
+  @include tamanos(900px, 400px);
+  align-items: center;
+  margin: 60px;
+  padding: 50px;
+}
 
+.container_menuvinos {
+  @extend .font_size;
+  display: flex;
+  margin-left: 30px;
+  background-color: $terciarycolor;
+  color: $maincolor;
+  position: fixed;
+  z-index: 1;
+}
+.wpp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 5%;
+  z-index: 1;
+}
 
-
-    .container-maps{
-        @include tamanos(600px, 40px);
-        align-items: center;
-        margin: 5px;
-        padding-bottom: 40px;
-
-    }
-     
-    .container-video{
-        @include tamanos(900px, 400px);
-        align-items: center;
-        margin: 60px;
-        padding: 50px;
-
-    }
-    
-    .container_menuvinos{
-        @extend .font_size;
-        display: flex;
-        margin-left: 30px;
-        background-color:$terciarycolor;
-        color: $maincolor;
-        position: fixed;
-        z-index: 1;
-
-       
-       }
-       .wpp{
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        width:5%;
-        z-index: 1;
-     
-    }
-    
-
-
- @-webkit-keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
-
-
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
 
 // titulo 1
-@-webkit-keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-right{0%{-webkit-transform:translateX(800px) rotate(540deg);transform:translateX(800px) rotate(540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
 
 // titulo 2
- @-webkit-keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}@keyframes roll-in-left{0%{-webkit-transform:translateX(-800px) rotate(-540deg);transform:translateX(-800px) rotate(-540deg);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);opacity:1}}
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
 
 // titulo 2
- @-webkit-keyframes slide-in-elliptic-top-fwd{0%{-webkit-transform:translateY(-600px) rotateX(-30deg) scale(0);transform:translateY(-600px) rotateX(-30deg) scale(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:0}100%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 1400px;transform-origin:50% 1400px;opacity:1}}@keyframes slide-in-elliptic-top-fwd{0%{-webkit-transform:translateY(-600px) rotateX(-30deg) scale(0);transform:translateY(-600px) rotateX(-30deg) scale(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;opacity:0}100%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 1400px;transform-origin:50% 1400px;opacity:1}}
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}

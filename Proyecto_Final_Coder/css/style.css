@@ -82,14 +82,30 @@ header {
   height: auto;
   text-align: center;
   padding-top: 30px;
-  font-weight: bold;
-  /* Media query mobile */ }
-  @media screen and (max-width: 576px) {
-    .imagen_fondo .box {
-      background-color: aquamarine;
-      grid-auto-columns: repeat(2, 1fr); } }
-  .imagen_fondo .menu-footer {
-    display: flex; }
+  font-weight: bold; }
+
+/* Media query mobile */
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .box {
+    display: flex;
+    background-color: blueviolet;
+    grid-auto-columns: auto; } }
+
+/* Media query tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .box {
+    display: flex;
+    background-color: red;
+    grid-auto-columns: auto; } }
+
+/* Media query desktop */
+@media screen and (min-width: 992px) and (max-width: 1120px) {
+  .box {
+    display: flex;
+    background-color: greenyellow;
+    grid-auto-columns: auto; }
+  .container_footer {
+    display: flex; } }
 
 .container-promociones {
   width: 60%; }
