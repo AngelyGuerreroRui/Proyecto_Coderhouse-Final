@@ -7,13 +7,22 @@
   text-align: center;
   padding-top: 100px;
   font-weight: bold;
+  object-fit: cover;
+ 
+  .img_tamano{
+    width: auto;
+    height: 400px;
+    padding: 5px;
+    align-items: center center;
+    object-fit: contain;
+ }
 }
 
 /* Media query mobile */
 @media screen and (min-width:0) and (max-width: 576px) {
     .box {
         display: flex;
-        background-color: blueviolet;
+        background-color: $secondarycolor;
         grid-auto-columns: auto;
 
       }
@@ -23,7 +32,7 @@
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .box {
         display: flex;
-        background-color: red;
+        background-color: $terciarycolor;
         grid-auto-columns: auto;
         
       }
@@ -33,7 +42,7 @@
 @media screen and (min-width: 992px) and (max-width: 1120px) {
   .box {
     display: flex;
-    background-color: greenyellow;
+    background-color: $maincolor;
     grid-auto-columns: auto;
     
   }
@@ -71,9 +80,11 @@
 }
 
 .container-formulario {
-  margin: 150px;
+  height: 500px;
+  margin: 5px 100px 50px 100%;
   margin-inline: 500px;
   padding-inline: 1%;
+  margin-top: 50px;
   @extend .font_size;
 
   .boton {
@@ -86,6 +97,10 @@
       @include subrayado;
       background-color: $secondarycolor;
     }
+    .foo_contacto{
+      margin-top: 0px;
+    }
+    
   }
 }
 
